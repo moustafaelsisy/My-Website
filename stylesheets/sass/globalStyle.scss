@@ -2,6 +2,8 @@
 
 //The attribute above is a parameter for the sass-autocompile package
 
+@import '_globalPartials';
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 
 html{
@@ -45,7 +47,7 @@ small{
   font-size: 1.5rem;
   font-family: "Open Sans Condensed" , "Verdana" , "Arial", sans-serif;
   background-color: #374353;
-  color: #FACC43;
+  color: $themeOrgane;
   padding: 1rem 10%;
   padding-right: 20%;
 }
@@ -54,8 +56,8 @@ small{
   width: auto;
   height: 4rem;
   vertical-align: middle;
-  box-shadow: 1px 0px 10px #000000;
-  border: 1px solid #FACC43;
+  box-shadow: 1px 0px 10px $black;
+  border: 1px solid $themeOrgane;
   border-radius: 50px;
 }
 
@@ -76,8 +78,8 @@ small{
   cursor: pointer;
   font-family: "Helevetica Neue", "Open Sans Condensed" , "Verdana" , "Arial", sans-serif;
   font-size: 2.0rem;
-  color: #fff;
-  background-color: #000;
+  color: $white;
+  background-color: $black;
   display: inline-block;
 
   &:hover{

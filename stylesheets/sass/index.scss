@@ -2,6 +2,8 @@
 
 //The attribute above is a parameter for the sass-autocompile package
 
+@import '_globalPartials';
+
 body{
   font-family:"Open Sans Condensed", "Verdana", "Arial", sans-serif;
 }
@@ -10,15 +12,6 @@ h2 > img{
   width: auto;
   height: 10.0rem;
   margin-top: 2.5rem;
-}
-
-#section-1{
-  background-color: #25BEA0;
-  color: #fff;
-  font-weight: light;
-
-  div[class*="col-"]{
-    vertical-align: middle;}
 }
 
 
@@ -30,7 +23,7 @@ h2 > img{
 
 #welcome {
   border-left: 1px solid #1c9b82;
-  background-color: #25BEA0;
+  background-color: $themeGreen;
   position: relative;
   z-index: 2;
 }
@@ -39,7 +32,7 @@ h2 > img{
 #me > img{
   width: 400px;
   border-radius: 200px;
-  box-shadow: 1px 0px 10px #000000;
+  box-shadow: 1px 0px 10px $black;
 }
 
 #welcome {
@@ -54,20 +47,35 @@ h2 > img{
     height: 8rem;
   }
 }
+#section-1{
+  background-color: $themeGreen;
+  color: $white;
+  font-weight: light;
+
+  div[class*="col-"]{
+    vertical-align: middle;}
+}
 
 #section-2 {
-  color: #000;
+  color: $black;
   padding: 1rem 10%;
 }
 
-#section-3 .btn-round{
-  color: #fff;
-  background-color: #FACC43;
+#section-3{
+  background-color: $themePurple;
+ .btn-round{
+  color: $white;
+  background-color: $themeOrgane;
+  }
+}
+
+#section-4{
+  background-color: $themeRed;
 }
 
 .tile
 {
-  color: #fff;
+  color: $white;
   padding: 5rem 10%;
 }
 
