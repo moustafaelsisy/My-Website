@@ -53,34 +53,9 @@ h2 > img{
   font-weight: light;
 
   div[class*="col-"]{
-    vertical-align: middle;}
-}
-
-#section-2 {
-  color: $black;
-  padding: 1rem 10%;
-}
-
-#section-3{
-  background-color: $themePurple;
- .btn-round{
-  color: $white;
-  background-color: $themeOrgane;
+    vertical-align: middle;
   }
-}
 
-#section-4{
-  background-color: $themeRed;
-}
-
-.tile
-{
-  color: $white;
-  padding: 5rem 10%;
-}
-
-.section
-{
   .container{
     width: 100%;
     padding: 1rem 5%;
@@ -99,10 +74,60 @@ h2 > img{
 
 }
 
+#section-2 {
+  color: $black;
+  padding: 1rem 10%;
+}
+
+#section-3{
+  background-color: $themePurple;
+ .btn-round{
+  color: $white;
+  background-color: $themeOrange;
+  }
+
+  >.tile-upper{
+    background: linear-gradient($themePurpleST, $themePurpleST);
+  }
+}
+
+#section-4{
+  background-color: $themeRed;
+  >.tile-upper{
+    background: linear-gradient($themeRedST, $themeRedST);
+  }
+}
+
+.tile
+{
+  color: $white;
+}
+
+.tile-upper{
+  padding: 5rem 10%;
+  position: relative;
+  z-index: 2;
+
+  >h6, >p{
+    text-align: center;
+  }
+
+  .btn-round{
+    display: table;
+    margin: 0 auto;
+  }
+}
+
+.tile-lower{
+  position: relative;
+  text-align: center;
+  height: 0px;
+}
+
 @media screen and (max-width: 992px){
   #me img{width: 50%; height: auto;}
-  .section p{text-align: center;}
-  .section div[class*="col-"]:first-of-type{
+  #section-1 p{text-align: center;}
+  #section-1 div[class*="col-"]:first-of-type{
     border-right: 0px;
     border-bottom: 2px solid;
   }
