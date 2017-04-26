@@ -28,4 +28,8 @@
       return $GLOBALS['STYLE_DIR'].basename($file, '.php').'.min.css';
     }
 
+    function getJS($file){
+      return $GLOBALS['JS_DIR'].basename($file, '.php').'.js';
+    }
+
 ?>

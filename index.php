@@ -10,7 +10,9 @@
     <title>Moustafa Elsisy</title>
     <?php
       echo $GLOBAL_HEAD; //Found in 'includes/head.php'
-      echo '<link rel="stylesheet" type="text/css" href="'.getCSS(__FILE__).'">';
+      echo '
+      <link rel="stylesheet" type="text/css" href="'.getCSS(__FILE__).'">
+      <script src="'.getJS(__FILE__).'" type="text/javascript"></script>';
     ?>
   </head>
   <body>
@@ -46,8 +48,8 @@
               See Projects
             </div>
           </div>
-          <div class="tile-lower" style="bottom: 404px;"> <!--NEED JS CODE FOR bottom PROPERTY -->
-              <i class=" fa fa-code" style="font-size: 404px;"></i> <!--NEED JS CODE FOR font-size PROPERTY -->
+          <div class="tile-lower">
+              <i class=" fa fa-code"></i>
           </div>
     </div>
     <div id="section-4" class="section tile">
@@ -63,8 +65,8 @@
               See Education
             </div>
           </div>
-          <div class="tile-lower" style="bottom: 370px;"> <!--NEED JS CODE FOR bottom PROPERTY -->
-              <i class=" fa fa-graduation-cap" style="font-size: 370px;"></i> <!--NEED JS CODE FOR font-size PROPERTY -->
+          <div class="tile-lower">
+              <i class=" fa fa-graduation-cap"></i>
           </div>
     </div>
   </body>
