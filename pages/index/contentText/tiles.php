@@ -1,11 +1,10 @@
 <?php
 require_once ($_SERVER['DOCUMENT_ROOT']."/pages/index/components/Tile.php");
 
-const FIRST_TILE_ID = 3;
+Tile::setInitialId(3);
 
 $tiles = array(
   new Tile(
-    FIRST_TILE_ID,
     "Projects",
     "I have had a few enlightening experiences in a variety of fields,
       ranging from desktop gamemode scripting to web development. Some of
@@ -17,7 +16,6 @@ $tiles = array(
     "fa-code"
   ),
   new Tile(
-    FIRST_TILE_ID+1,
     "Education",
     "I have had a few enlightening experiences in a variety of fields,
       ranging from desktop gamemode scripting to web development. Some of
