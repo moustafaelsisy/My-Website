@@ -3,5 +3,5 @@
   $STYLE_DIR = 'stylesheets/';
   $IMAGE_DIR = 'assets/images/';
   $DOC_DIR = 'assets/docs/';
-  $JS_DIR = 'javascript/';
+  $JS_DIR = 'js/';
  ?>
