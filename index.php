@@ -1,8 +1,8 @@
 <?php
 //INCLUDES
- include ("includes/head.php");
- include ("includes/template.php");
- include ("pages/index/contentText/tiles.php");
+ require_once ("includes/head.php");
+ require_once ("includes/template.php");
+ require_once ("pages/index/contentText/tiles.php");
 ?>
 
 <!DOCTYPE HTML>

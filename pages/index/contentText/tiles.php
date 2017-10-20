@@ -1,5 +1,5 @@
 <?php
-include_once(dirname(__DIR__).'/components/Tile.php');
+require_once ($_SERVER['DOCUMENT_ROOT']."/pages/index/components/Tile.php");
 
 const FIRST_TILE_ID = 3;
 
