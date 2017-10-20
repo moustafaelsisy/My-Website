@@ -13,6 +13,7 @@ $tiles = array(
       programs is available over at my projects webpage, along with other
       open source projects and their GitHub repositories :)",
     "See Projects",
+    "#",
     "fa-code"
   ),
   new Tile(
@@ -24,6 +25,7 @@ $tiles = array(
       programs is available over at my projects webpage, along with other
       open source projects and their GitHub repositories :)",
     "See Education",
+    "#",
     "fa-graduation-cap"
   )
 );

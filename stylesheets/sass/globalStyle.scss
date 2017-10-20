@@ -40,6 +40,16 @@ small{
   color: inherit !important;
 }
 
+a{
+  color: initial;
+  text-decoration: none;
+
+  &:hover, &:focus, &:active{
+    color: initial;
+    text-decoration: none;
+  }
+}
+
 #topBar{
   width: 100%;
   margin: 0px;
@@ -82,7 +92,7 @@ small{
   background-color: $black;
   display: inline-block;
   text-align: center;
-  
+
   &:hover{
     filter: brightness(0.9);
     -webkit-filter: brightness(0.9);
