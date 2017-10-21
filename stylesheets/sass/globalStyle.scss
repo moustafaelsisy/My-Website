@@ -43,6 +43,7 @@ small{
 a{
   color: initial;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover, &:focus, &:active{
     color: initial;
@@ -69,6 +70,12 @@ a{
   box-shadow: 1px 0px 10px $black;
   border: 1px solid $themeOrange;
   border-radius: 50px;
+}
+
+#footer{
+  padding: 1rem 10%;
+  background-color: #374353;
+  color: #fff;
 }
 
 .row-table

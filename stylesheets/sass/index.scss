@@ -6,6 +6,10 @@
 
 body{
   font-family:"Open Sans Condensed", "Verdana", "Arial", sans-serif;
+  animation: fade 2.0s ease;
+  @keyframes fade{
+    from {opacity: 0;} to {opacity: 1;}
+  }
 }
 
 h2 > img{
@@ -37,9 +41,13 @@ h2 > img{
 
 #welcome {
   padding-top: 5%;
+  right: -10%;
+  opacity: 0;
   animation-name: fadeIn;
   animation-duration: 1.5s;
   animation-timing-function: ease-out;
+  animation-delay: 1.0s;
+  animation-fill-mode: forwards;
 
   >h6{
     padding-left: 50%;
@@ -51,7 +59,6 @@ h2 > img{
   }
 
   @keyframes fadeIn {
-    0% {right: -10%; opacity: 0;}
     100% {right: 0px; opacity: 1;}
   }
 }
@@ -83,9 +90,25 @@ h2 > img{
 
 }
 
-#section-2 {
+#section-2, #pre-footer {
   color: $black;
   padding: 1rem 10%;
+}
+
+#pre-footer{
+  >.accounts-wrapper{
+    margin: 0 auto;
+    text-align: center;
+
+    .fa{
+      font-size: 5rem;
+      margin-left: 5%;
+      margin-right: 5%;
+      &:hover{
+        opacity: 0.8;
+      }
+    }
+  }
 }
 
 .tile:nth-child(even){

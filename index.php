@@ -2,6 +2,8 @@
  require_once ("includes/head.php");
  require_once ("pages/index/contentText/tiles.php");
  require_once ($_SERVER['DOCUMENT_ROOT']."/pages/common/TopNav.php");
+ require_once ($_SERVER['DOCUMENT_ROOT']."/pages/index/components/PreFooter.php");
+ require_once ($_SERVER['DOCUMENT_ROOT']."/pages/common/Footer.php");
 ?>
 
 <!DOCTYPE HTML>
@@ -40,6 +42,8 @@
       foreach($tiles as $tile){
         echo $tile->view();
       }
+      echo (new PreFooter())->view();
+      echo (new Footer())->view();
     ?>
   </body>
 </html>
