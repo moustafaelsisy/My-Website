@@ -1,8 +1,7 @@
 <?php
-//INCLUDES
  require_once ("includes/head.php");
- require_once ("includes/template.php");
  require_once ("pages/index/contentText/tiles.php");
+ require_once ($_SERVER['DOCUMENT_ROOT']."/pages/common/TopNav.php");
 ?>
 
 <!DOCTYPE HTML>
@@ -18,7 +17,7 @@
   </head>
   <body>
     <?php
-    echo $GLOBAL_NAV;
+    echo (new TopNav())->view();
     ?>
     <div id="section-1" class="section">
           <div class="container text-center">
@@ -39,7 +38,7 @@
     <?php
       //Generate the tiles
       foreach($tiles as $tile){
-        echo $tile->generateHTML();
+        echo $tile->view();
       }
     ?>
   </body>

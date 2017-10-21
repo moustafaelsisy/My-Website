@@ -35,7 +35,7 @@ class Tile {
     }
   }
 
-  public function generateHTML(){
+  public function view(){
     return '
             <div id="section-'.($this->id).'" class="section tile">
               <div class ="tile-upper">
