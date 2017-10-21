@@ -88,11 +88,7 @@ h2 > img{
   padding: 1rem 10%;
 }
 
-<<<<<<< Updated upstream
-#section-3, #section-6{
-=======
 .tile:nth-child(even){
->>>>>>> Stashed changes
   background-color: $themePurple;
  .btn-round{
   color: $white;
@@ -107,27 +103,11 @@ h2 > img{
 .tile:nth-child(odd){
   background-color: $themeGreen;
   >.tile-upper{
-<<<<<<< Updated upstream
-    background: $themeRedST;
-  }
-}
-
-#section-5{
-  background-color: $themeOrange;
-  .btn-round{
-    background-color: $white;
-    color: $black;
-  }
-
-  >.tile-upper{
-    background: $themeOrangeST;
-=======
     background-color: $themeGreenST;
     .btn-round:hover{
       filter: brightness(1.1);
       -webkit-filter: brightness(1.1);
     }
->>>>>>> Stashed changes
   }
 
   >.tile-lower{
@@ -150,6 +130,11 @@ h2 > img{
 
   >h6, >p{
     text-align: center;
+  }
+
+  >p{
+    max-width: 900px;
+    margin: 1rem auto;
   }
 
   .btn-round{

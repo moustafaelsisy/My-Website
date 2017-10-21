@@ -33,7 +33,7 @@ $tiles = array(
     "If you are looking for a professional summary of my work history, projects, achievements and academics, this is
     where you will find everything summed up!",
     "Check Resume",
-    "#",
+    "assets/docs/Moustafa_Elsisy_Resume.pdf",
     "fa-sticky-note"
   )
 );
