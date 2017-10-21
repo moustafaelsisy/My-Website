@@ -37,6 +37,9 @@ h2 > img{
 
 #welcome {
   padding-top: 5%;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
 
   >h6{
     padding-left: 50%;
@@ -45,6 +48,11 @@ h2 > img{
   img{
     width:auto;
     height: 8rem;
+  }
+
+  @keyframes fadeIn {
+    0% {right: -10%; opacity: 0;}
+    100% {right: 0px; opacity: 1;}
   }
 }
 #section-1{
@@ -60,6 +68,7 @@ h2 > img{
     width: 100%;
     padding: 1rem 5%;
     text-align: center;
+    overflow-x: hidden;
   }
 
   p{
@@ -79,7 +88,11 @@ h2 > img{
   padding: 1rem 10%;
 }
 
+<<<<<<< Updated upstream
 #section-3, #section-6{
+=======
+.tile:nth-child(even){
+>>>>>>> Stashed changes
   background-color: $themePurple;
  .btn-round{
   color: $white;
@@ -91,9 +104,10 @@ h2 > img{
   }
 }
 
-#section-4{
-  background-color: $themeRed;
+.tile:nth-child(odd){
+  background-color: $themeGreen;
   >.tile-upper{
+<<<<<<< Updated upstream
     background: $themeRedST;
   }
 }
@@ -107,6 +121,13 @@ h2 > img{
 
   >.tile-upper{
     background: $themeOrangeST;
+=======
+    background-color: $themeGreenST;
+    .btn-round:hover{
+      filter: brightness(1.1);
+      -webkit-filter: brightness(1.1);
+    }
+>>>>>>> Stashed changes
   }
 
   >.tile-lower{
