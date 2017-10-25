@@ -8,6 +8,17 @@ body{
   font-family:"Open Sans Condensed", "Verdana", "Arial", sans-serif;
 }
 
+.inline-subheading{
+  display: inline-block;
+}
+
+.brief{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 0;
+}
+
 .block-row {
   text-align: center;
 
@@ -20,20 +31,34 @@ body{
     .block:nth-of-type(even){ background-color: $themeGreen; }
     .block:nth-of-type(odd){ background-color: $themeAqua; }
   }
+
+  @media screen and (max-width:768px){
+    &:last-child .block{
+      height: 13rem;
+    }
+  }
 }
 
 .block {
   color: #fff;
   padding: 5rem;
-  height: 25rem;
+  height: 15rem;
   text-align: center;
+  cursor: default;
 
-  &:hover h5{
-    font-size: 2.75rem !important;
+  @media screen and (max-width:768px){height: 18rem;}
+
+  &:hover{
+    filter: brightness(0.9);
+    h5{
+        @media screen and (min-width:768px){ font-size: 2.75rem !important };
+    }
   }
 
   h5{
     font-weight: 600;
     transition: font-size 0.5s;
+
+    @media screen and (max-width:768px){font-size: 2.0rem;}
   }
 }

@@ -2,6 +2,7 @@
  require_once ($_SERVER['DOCUMENT_ROOT']."/includes/head.php");
  require_once ("contentText/blocks.php");
  require_once ("components/BlockRow.php");
+ require_once ("components/Header.php");
  require_once ($_SERVER['DOCUMENT_ROOT']."/pages/common/TopNav.php");
  ?>
 
@@ -19,6 +20,7 @@
   <body>
     <?php
       echo (new TopNav())->view();
+      echo (new Header())->view();
     ?>
     <div class="container" style="width: 100%;">
       <?php
