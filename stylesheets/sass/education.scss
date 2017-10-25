@@ -1,0 +1,29 @@
+//compileCompressed: ../$1.min.css
+
+//The attribute above is a parameter for the sass-autocompile package
+
+@import '_globalPartials';
+
+.block-row {
+  text-align: center;
+}
+
+.block {
+  color: #fff;
+  padding: 5rem;
+  height: 25rem;
+  transition: font-size 0.5s;
+
+  &:nth-child(4n){ background-color: $themePurple; }
+  &:nth-child(4n+1){ background-color: $themeGreen; }
+  &:nth-child(4n+2){ background-color: $themeOrange; }
+  &:nth-child(4n+3){ background-color: $themeAqua; }
+
+  &:hover h3{
+    font-size: 4rem !important;
+  }
+
+  h3{
+    font-weight: 600;
+  }
+}
