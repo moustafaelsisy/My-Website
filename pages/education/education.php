@@ -1,5 +1,8 @@
 <?php
- require_once ("includes/head.php");
+ require_once ($_SERVER['DOCUMENT_ROOT']."/includes/head.php");
+ require_once ("contentText/blocks.php");
+ require_once ("components/BlockRow.php");
+ require_once ($_SERVER['DOCUMENT_ROOT']."/pages/common/TopNav.php");
  ?>
 
 <!DOCTYPE HTML>
@@ -9,29 +12,26 @@
     <?php
       echo $GLOBAL_HEAD;
       echo '
-      <link rel="stylesheet" type="text/css" href="'.getCSS(__FILE__).'">
-      <script src="'.getJS(__FILE__).'" type="text/javascript"></script>';
+      <link rel="stylesheet" type="text/css" href="/'.getCSS(__FILE__).'">
+      <script src="/'.getJS(__FILE__).'" type="text/javascript"></script>';
     ?>
   </head>
   <body>
-    <div class="container" style="
-    width: 100%;
-">
-    <div class="row" style="
-    text-align: center;
-">
-        <div class="col-xs-6" style="
-    background-color: #374353;
-    color: #fff;
-    padding: 5rem;
-">
-    <h3 style="
-    font-weight: 600;
-">COMP 2001</h3>
-    <p>Introduction to Programming in Java: The course introduces programming in the Java language, along with some data structures, such as Linked Lists, and introduces GUI development using the swing library. It also covers a lot of aspects of OOP in Java, including Interfaces, Nested Classes, Polymorphism and Inheritance</p>
-</div>
-        <div class="col-xs-6">COMP 2002</div>
+    <?php
+      echo (new TopNav())->view();
+    ?>
+    <div class="container" style="width: 100%;">
+      <?php
+
+        $terminationCondition = sizeof($blocks)-(sizeof($blocks) % 2);
+        for($i = 0; $i < $terminationCondition; $i += 2){
+          echo (new BlockRow($blocks[$i], $blocks[$i+1]))->view();
+        }
+        if($terminationCondition !== sizeof($blocks)){ //1 more block to go
+          echo (new BlockRow($blocks[$terminationCondition]))->view();
+        }
+
+      ?>
     </div>
-</div>
   </body>
 </html>

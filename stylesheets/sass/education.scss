@@ -4,26 +4,36 @@
 
 @import '_globalPartials';
 
+body{
+  font-family:"Open Sans Condensed", "Verdana", "Arial", sans-serif;
+}
+
 .block-row {
   text-align: center;
+
+  &:nth-of-type(even){
+    .block:nth-of-type(even){ background-color: $themePurple; }
+    .block:nth-of-type(odd){ background-color: $themeOrange; }
+  }
+
+  &:nth-of-type(odd){
+    .block:nth-of-type(even){ background-color: $themeGreen; }
+    .block:nth-of-type(odd){ background-color: $themeAqua; }
+  }
 }
 
 .block {
   color: #fff;
   padding: 5rem;
   height: 25rem;
-  transition: font-size 0.5s;
+  text-align: center;
 
-  &:nth-child(4n){ background-color: $themePurple; }
-  &:nth-child(4n+1){ background-color: $themeGreen; }
-  &:nth-child(4n+2){ background-color: $themeOrange; }
-  &:nth-child(4n+3){ background-color: $themeAqua; }
-
-  &:hover h3{
-    font-size: 4rem !important;
+  &:hover h5{
+    font-size: 2.75rem !important;
   }
 
-  h3{
+  h5{
     font-weight: 600;
+    transition: font-size 0.5s;
   }
 }
