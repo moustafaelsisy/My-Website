@@ -4,6 +4,7 @@
  require_once ("components/BlockRow.php");
  require_once ("components/Header.php");
  require_once ($_SERVER['DOCUMENT_ROOT']."/pages/common/TopNav.php");
+ require_once ($_SERVER['DOCUMENT_ROOT']."/pages/common/Footer.php");
  ?>
 
 <!DOCTYPE HTML>
@@ -35,5 +36,8 @@
 
       ?>
     </div>
+    <?php
+      echo (new Footer())->view();
+     ?>
   </body>
 </html>
