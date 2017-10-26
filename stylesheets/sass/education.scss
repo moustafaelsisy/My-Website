@@ -3,35 +3,13 @@
 //The attribute above is a parameter for the sass-autocompile package
 
 @import '_globalPartials';
-
-body{
-  font-family:"Open Sans Condensed", "Verdana", "Arial", sans-serif;
-}
+@import '_blocks';
 
 .inline-subheading{
   display: inline-block;
 }
 
-.brief{
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.block-row {
-  text-align: center;
-
-  &:nth-of-type(even){
-    .block:nth-of-type(even){ background-color: $themePurple; }
-    .block:nth-of-type(odd){ background-color: $themeOrange; }
-  }
-
-  &:nth-of-type(odd){
-    .block:nth-of-type(even){ background-color: $themeGreen; }
-    .block:nth-of-type(odd){ background-color: $themeAqua; }
-  }
-
+.block-row{
   @media screen and (max-width:768px){
     &:last-child .block{
       height: 13rem;
@@ -39,27 +17,9 @@ body{
   }
 }
 
-.block {
-  color: #fff;
-  padding: 5rem;
-  height: 15rem;
+.brief{
+  width: 50%;
+  margin: 0 auto;
   text-align: center;
-  cursor: default;
-
-  @media screen and (max-width:768px){height: 18rem;}
-
-  &:hover{
-    filter: brightness(0.9);
-    h5{
-        @media screen and (min-width:768px){ font-size: 2.75rem !important };
-    }
-  }
-
-  h5{
-    font-weight: 600;
-    transition: font-size 0.5s;
-
-    @media screen and (max-width:768px){font-size: 2.0rem;}
-    @media screen and (max-width:400px){font-size: 1.5rem;}
-  }
+  padding: 2rem 0;
 }

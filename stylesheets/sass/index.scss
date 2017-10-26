@@ -5,7 +5,6 @@
 @import '_globalPartials';
 
 body{
-  font-family:"Open Sans Condensed", "Verdana", "Arial", sans-serif;
   animation: fade 2.0s ease;
   @keyframes fade{
     from {opacity: 0;} to {opacity: 1;}

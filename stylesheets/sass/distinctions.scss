@@ -1,0 +1,6 @@
+//compileCompressed: ../$1.min.css
+
+//The attribute above is a parameter for the sass-autocompile package
+
+@import '_globalPartials';
+@import '_blocks';
