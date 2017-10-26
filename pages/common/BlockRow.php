@@ -10,11 +10,11 @@ class BlockRow{
   }
 
 
-  public function view(){
+  public function view($breakpoint){
     return '
     <div class="row block-row">
-      '.$this->leftBlock->view($this->rightBlock ? 6 : 12)
-       .($this->rightBlock ? $this->rightBlock->view(6) : '').'
+      '.$this->leftBlock->view($this->rightBlock ? 6 : 12, $breakpoint)
+       .($this->rightBlock ? $this->rightBlock->view(6, $breakpoint) : '').'
     </div>
     ';
   }

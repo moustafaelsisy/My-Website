@@ -11,10 +11,11 @@ class Block{
 
   /*
   * @param width Width out of 12 for Bootstrap grid
+  * @param breakpoint Device size for the column to take up the whole row (one of: xs, sm, md, lg)
   */
-  public function view($width){
+  public function view($width, $breakpoint){
     return '
-    <div class="col-xs-'.$width.' block">
+    <div class="col-'.$breakpoint.'-'.$width.' block">
       <h5>'.$this->title.'</h3>
       <p>'.$this->body.'</p>
     </div>
