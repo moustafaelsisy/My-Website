@@ -17,6 +17,15 @@
   }
 }
 
+.block{
+  &:hover{
+    filter: brightness(0.9);
+    h5{
+        @media screen and (min-width:768px){ font-size: 2.75rem !important };
+    }
+  }
+}
+
 .brief{
   width: 50%;
   margin: 0 auto;

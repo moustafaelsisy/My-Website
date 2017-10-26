@@ -20,7 +20,7 @@
   <body>
     <?php
       echo (new TopNav())->view();
-      echo (new Blocks($blocks))->view();
+      echo (new Blocks($blocks))->view("md");
       echo (new Footer())->view();
      ?>
   </body>

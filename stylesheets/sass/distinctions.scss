@@ -4,3 +4,9 @@
 
 @import '_globalPartials';
 @import '_blocks';
+
+.block{
+  height: 35rem;
+
+  @media screen and (max-width:720px){ height: auto };
+}

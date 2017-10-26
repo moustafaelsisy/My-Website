@@ -2,13 +2,13 @@
   text-align: center;
 
   &:nth-of-type(even){
-    .block:nth-of-type(even){ background-color: $themePurple; }
+    .block:nth-of-type(even){ background-color: $themeAqua; }
     .block:nth-of-type(odd){ background-color: $themeOrange; }
   }
 
   &:nth-of-type(odd){
     .block:nth-of-type(even){ background-color: $themeGreen; }
-    .block:nth-of-type(odd){ background-color: $themeAqua; }
+    .block:nth-of-type(odd){ background-color: $themePurple; }
   }
 }
 
@@ -20,13 +20,6 @@
   cursor: default;
 
   @media screen and (max-width:768px){height: 18rem;}
-
-  &:hover{
-    filter: brightness(0.9);
-    h5{
-        @media screen and (min-width:768px){ font-size: 2.75rem !important };
-    }
-  }
 
   h5{
     font-weight: 600;
