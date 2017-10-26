@@ -1,6 +1,7 @@
 <?php
  require_once ($_SERVER['DOCUMENT_ROOT']."/includes/head.php");
  require_once ("contentText/blocks.php");
+ require_once ("components/Header.php");
  require_once ($_SERVER['DOCUMENT_ROOT']."/pages/common/Blocks.php");
  require_once ($_SERVER['DOCUMENT_ROOT']."/pages/common/TopNav.php");
  require_once ($_SERVER['DOCUMENT_ROOT']."/pages/common/Footer.php");
@@ -20,6 +21,7 @@
   <body>
     <?php
       echo (new TopNav())->view();
+      echo (new Header())->view();
       echo (new Blocks($blocks))->view("md");
       echo (new Footer())->view();
      ?>
