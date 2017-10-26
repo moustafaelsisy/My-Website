@@ -25,7 +25,7 @@
           <div class="container text-center">
             <div class="row">
               <div class="col-md-6 text-center" id="me" style="border-color: #1D9E85;">
-                <?php echo '<img src="'.$IMAGE_DIR.'me.jpg"></img>'; ?>
+                <?php echo '<img src="'.$IMAGE_DIR.'me.jpg" alt="Moustafa Elsisy"></img>'; ?>
               </div>
               <div class="col-md-6" id="welcome">
                 <h1 class="text-right">Hi, I am Moustafa Elsisy</h1>

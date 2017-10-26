@@ -61,8 +61,23 @@ a{
   font-family: "Open Sans Condensed" , "Verdana" , "Arial", sans-serif;
   background-color: #374353;
   color: $themeOrange;
-  padding: 1rem 10%;
-  padding-right: 20%;
+  padding: 1rem 5%;
+
+  #tabs{
+    margin-top: 2rem;
+    color: #fff;
+    text-align: center;
+
+    a{
+      padding-bottom: 0.75rem;
+      margin-right: 1rem;
+      color: $white;
+
+      &:hover{
+        border-bottom: 5px solid #FACC43
+      }
+    }
+  }
 }
 
 #logo{

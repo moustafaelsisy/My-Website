@@ -25,7 +25,7 @@ $tiles = array(
     "Distinctions",
     "You can also find here some of the distinctions that I am extremely humbled to have received.",
     "View Distinctions",
-    "#",
+    "/pages/distinctions/distinctions.php",
     "fa-check-circle"
   ),
   new Tile(
@@ -33,7 +33,7 @@ $tiles = array(
     "If you are looking for a professional summary of my work history, projects, achievements and academics, this is
     where you will find everything summed up!",
     "Check Resume",
-    "assets/docs/Moustafa_Elsisy_Resume.pdf",
+    "/assets/docs/Moustafa_Elsisy_Resume.pdf",
     "fa-sticky-note"
   )
 );
