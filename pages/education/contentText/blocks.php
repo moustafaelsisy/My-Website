@@ -1,5 +1,5 @@
 <?php
-require_once ($_SERVER['DOCUMENT_ROOT']."/pages/education/components/Block.php");
+require_once ($_SERVER['DOCUMENT_ROOT']."/pages/common/Block.php");
 
 $blocks = array(
   new Block("COMP 3731: Introduction to Scientific Computing", ""),
