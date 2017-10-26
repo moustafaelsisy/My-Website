@@ -18,7 +18,7 @@ $tiles = array(
     "Practice is great - but even greater things can happen when theory and practice shake hands! You can find
     the courses that I have completed so far here, along with my current academic standing.",
     "See Education",
-    "#",
+    "/pages/education/education.php",
     "fa-certificate"
   ),
   new Tile(
