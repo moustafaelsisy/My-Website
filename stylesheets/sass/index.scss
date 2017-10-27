@@ -169,6 +169,8 @@ h2 > img{
   position: relative;
   text-align: center;
   height: 0px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 992px){
