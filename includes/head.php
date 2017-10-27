@@ -20,6 +20,8 @@
     <link rel="stylesheet" type="text/css" href="/'.$STYLE_DIR.'globalStyle.min.css">
     <meta chartset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Moustafa Elsisy. An energetic Software/Web Developer in the making, who likes to stay outside of the comfort zone,
+    and experiment with a lot of technologies.">
     <link rel="shortcut icon" href="favicon.ico">';
 
     //functions
