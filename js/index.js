@@ -10,8 +10,8 @@ var tileResize = function() {
   });
 }
 
-$(function(){
-  tileResize();
+$(document).ready(function(){
+  document.body.onload = tileResize;
   [document, window].forEach(function(element){
     element.addEventListener('resize', tileResize);
   })
