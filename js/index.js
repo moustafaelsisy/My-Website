@@ -11,6 +11,7 @@ var tileResize = function() {
 }
 
 $(document).ready(function(){
+  tileResize(); //in the case of refreshes, body.onload is not called
   document.body.onload = tileResize;
   [document, window].forEach(function(element){
     element.addEventListener('resize', tileResize);
