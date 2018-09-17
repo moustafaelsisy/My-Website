@@ -12,7 +12,7 @@ class Header{
                 </div>
                 <div class="col-md-6" id="welcome">
                   <h1 class="text-right">Hi, I am Moustafa Elsisy</h1>
-                  <h6 class="text-right"></br>A Software and Web Developer in the making, currently studying in St. John\'s, Canada.</h6>
+                  <h6 class="text-right"></br>A Software Developer and Data Scientist in the making, currently studying in St. John\'s, Canada.</h6>
                 </div>
               </div>
             </div>

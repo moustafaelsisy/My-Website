@@ -7,15 +7,15 @@ $tiles = array(
   new Tile(
     "Projects",
     "I have had the pleasure of going through many enlightening experiences in a variety of fields,
-      ranging from scripting gamemodes to Web Development. Some of the projects I have made are closed
-      source, but you can find my open-source projects on my GitHub account if you click the button below!",
+      ranging from Web Development to Data Science. Some of the projects I have made are closed
+      source, but you can find my open-source projects on GitHub through the button below!",
     "Visit Projects",
     "https://github.com/moustafaelsisy",
     "fa-code"
   ),
   new Tile(
     "Education",
-    "Practice is great - but even greater things can happen when theory and practice shake hands! You can find
+    "Practice is great - but even greater things can happen when practice and theory reinforce each other! You can find
     the courses that I have completed so far here, along with my current academic standing.",
     "See Education",
     "/pages/education/education.php",

@@ -6,7 +6,7 @@ class Header{
     return '
     <div class="section">
       <h2 class="text-center">Memorial University of Newfoundland</h2>
-      <h4 class="text-center">B.Sc in Computer Science, Sophomore</h4>
+      <h4 class="text-center">B.Sc in Computer Science, Junior</h4>
       <div class="text-center">
         <h6 class="inline-subheading" style="margin-right: 1rem;">GPA: 4.0</h6>
         <h6 class="inline-subheading" style="margin-left: 1rem;">Expected Graduation: December 2019</h6>
