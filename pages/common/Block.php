@@ -16,8 +16,10 @@ class Block{
   public function view($width, $breakpoint){
     return '
     <div class="col-'.$breakpoint.'-'.$width.' block">
-      <h5>'.$this->title.'</h3>
-      <p>'.$this->body.'</p>
+      <div class="block-content">
+        <h5>'.$this->title.'</h3>
+        <p>'.$this->body.'</p>
+      </div>
     </div>
     ';
   }
